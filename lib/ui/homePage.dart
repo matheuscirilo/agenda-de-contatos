@@ -79,9 +79,9 @@ class _HomePageState extends State<HomePage> {
                             ? FileImage(File(contacts[index].img))
                             : AssetImage("images/person.png"))),
               ),
-              Padding(
-                  padding: EdgeInsets.only(left: 10.0),
-                  child: Expanded(
+              Expanded(
+                child: Padding(
+                    padding: EdgeInsets.only(left: 10.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -99,8 +99,8 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(fontSize: 18.0),
                         ),
                       ],
-                    ),
-                  )),
+                    )),
+              )
             ],
           ),
         ),
